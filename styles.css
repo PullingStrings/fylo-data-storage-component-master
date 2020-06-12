@@ -2,11 +2,18 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .container {
+  background-color: purple;
+}
+
+.progress-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
-.item {
-    background: rgba(55, 143, 63, 0.603);
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
