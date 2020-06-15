@@ -7,41 +7,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo data storage component</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
-  <div class="container">
-    <section>
-      <div class="progress-section">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo">
-        </div>
-        <div class="document">
+<div class="container">
+  <div class="row">
+    <div class="col-md icon-container">
+      <div class="row">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="row">
+        <div class="col-2 icon">
           <img src="./images/icon-document.svg" alt="document">
         </div>
-        <div class="folder">
+        <div class="col-2 icon">
           <img src="./images/icon-folder.svg" alt="folder">
         </div>
-        <div class="upload">
+        <div class="col-2 icon">
           <img src="./images/icon-upload.svg" alt="upload">
         </div>
       </div>
-      <div class="progress-section">
-        
+    </div>
+      <div class="col-md space-container">
+        <p>You’ve used <b>815 GB</b> of your storage 185 GB Left</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+        </div>
+        <p>0 GB</p>
+        <p>1000 GB</p>
       </div>
-    </section>
+    </div>
   </div>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-
-  0 GB
-  1000 GB
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Tito Zwane</a>.
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
