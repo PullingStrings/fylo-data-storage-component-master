@@ -1,19 +1,75 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.space {
+  background-color: #0d122c;
+  height: 10em;
+}
 
-body {
+.bottom-space {
+  background-color: #0d122c;
+  height: 100vh;
   background-image: url('./images/bg-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #0d122c;
+}
+
+.front {
+  position: absolute;
+  z-index: 3;
+  background: #0d122c;
+  width: 100%;
+  height: 15%;
+}
+
+.box {
+  position: relative;
+  z-index: 1;
 }
 
 p {
   color: #fff;
 }
 
-.container {
 
+.gb-left {
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: -80px;
+  background-color: #fff;
+  float: right;
+}
+
+.gb-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  width: 0;
+  height: 0;
+  border: 36px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -6px;
+  margin-bottom: 106px;
+}
+
+.progress {
+  background-color: #151e49 !important;
+  border-radius: 10px !important;
+}
+
+.progress-bar {
+  background: rgb(228,203,146);
+  background: -moz-linear-gradient(90deg, rgba(228,203,146,1) 0%, rgba(170,83,141,1) 47%, rgba(236,59,100,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(228,203,146,1) 0%, rgba(170,83,141,1) 47%, rgba(236,59,100,1) 100%);
+  background: linear-gradient(90deg, rgba(228,203,146,1) 0%, rgba(170,83,141,1) 47%, rgba(236,59,100,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4cb92",endColorstr="#ec3b64",GradientType=1);
+  margin: 1px !important;
+  border-radius: 10px;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .icon {
